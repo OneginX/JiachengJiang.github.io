@@ -1,16 +1,18 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+
+  background-color: black;
+  background-image: url("transColorful.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 canvas {
   display: block;
 }
 
 .layer2 {
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,23 +21,12 @@ canvas {
 iframe {
   border-width: 0;
   border-style: none;
-  border-color: red;
   border-image: none;
-  padding: 0%;
-  margin: 0%;
-}
-
-body {
-  margin: 0%;
-  background-color: black;
-  background-image: url("transColorful.png");
 }
 
 .layer1 {
-  top: 0px;
-  left: 50px;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
 }
 
 p {
