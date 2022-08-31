@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+      
+      <section>
+
+        <div class = "FirstPage">
+            <h1 style="text-shadow: 10px 10px 10px rgb(27, 27, 27);">
+                Manhattan Crash Report
+            </h1>
+
+        </div>
+
+        <div class = "SecondPage">
+            <p style="margin-top: 5%;">
+                According to the government's report, there are about 6,000,000 traffic accidents across the United States every year, and 1/30 of them happens in New York City. In 2018, there were 228,047 motor vehicle accidents in all of New York City. This includes collisions involving all motorists, bicyclists, and pedestrians. That breaks down to about 20,000 car accidents every month and over 600 every day in NYC. 
+            </p>
+
+            <p>
+                For residents live in New York, it is particularly important to know the facts of New York's traffic situation. This report will narrow the scope down to the traffic accidents in Manhattan and focus on where and when these accidents happens.
+            </p>
+        </div>
+
+        <div class = "FirstPage">
+            <h1>
+                Where Does It Happen?
+            </h1>
+
+        </div>
+
+        <div class = "Hmap">
+            <iframe 
+            width='100%' 
+            height='100%' 
+            src="https://api.mapbox.com/styles/v1/oneginx/ckvfqphwl32at14qrl3xnueqp.html?title=false&access_token=pk.eyJ1Ijoib25lZ2lueCIsImEiOiJja3Y3M3R6cmw5ZmwzMzFuemE2eWUzcTIwIn0.7F3P4Bx_blkUZY1ueCj5TA&zoomwheel=false#11.27/40.7853/-73.9547/0/6" >
+            </iframe>
+        </div>
+
+        <div class = "FourthPage">
+            <div onclick="pop1()">
+                <img src="asset/area1.png" alt="WashingtonHeights" width="400" height="400">
+            </div>
+  
+
+            <div onclick="pop2()">
+                <img src="asset/area2.png" alt="EastHarlem" width="400" height="400">
+            </div>
+
+            <div onclick="pop3()">
+                <img src="asset/area3.png" alt="UpperEast" width="400" height="400">
+                
+            </div>
+
+            <div onclick="pop4()">
+                <img src="asset/area4.png" alt="MidtownWest" width="400" height="400">
+                
+            </div>
+
+            <div onclick="pop5()">
+                <img src="asset/area5.png" alt="KipsBay" width="400" height="400">
+            </div>
+
+            <div onclick="pop6()">
+                <img src="asset/area6.png" alt="Bowery-ChinaTown" width="400" height="400">
+            </div>
+        </div>
+
+        <div class="FirstPage">
+            <h1>
+                When Does It Happen?
+            </h1>
+        </div>
+
+        <div class = "ThirdPage">
+            <div class = "left">
+                <p>CRASH TIME</p>
+                <embed src="asset/time2.svg" alt="time" style="width: 650px">
+                
+
+            </div>
+
+            <div class = "right">
+                <p>CRASH DATE</p>
+                <embed src="asset/date2.svg" class="dateSvg" alt="date" style="width: 650px">
+            </div>
+        </div>
+
+
+        <div class = "SixPage">
+            <div>
+                <p id="messageTime">0:00</p>
+                <div class="btnUp" onClick="scrollUpTime()"><img src="asset/upArrow.svg" width="80"></div>
+
+                <div class="window" id="wndTime">
+                    <img src="asset/timePosition.svg" width="100%-15px">
+                </div>
+
+                <div class="btnDown" onClick="scrollDownTime()"><img src="asset/downArrow.svg" width="80"></div>
+            </div>
+
+            <div>
+                <p id="messageWeek">Monday</p>
+                <div class="btnUp" onClick="scrollUpWeek()"><img src="asset/upArrow.svg" width="80"></div>
+
+                <div class="window" id="wndWeek">
+                    <img src="asset/datePosition.svg" width="100%-15px" height="3100px"  >
+                </div>
+
+                <div class="btnDown" onClick="scrollDownWeek()"><img src="asset/downArrow.svg" width="80"></div>
+            </div>
+
+            <div>
+                <p id="messageDate">January</p>
+                <div class="btnUp" onClick="scrollUpDate()"><img src="asset/upArrow.svg" width="80"></div>
+
+                <div class="window" id="wndDate">
+                    <img src="asset/monthPosition.svg" width="100%-15px" height="3500px">
+                </div>
+
+                <div class="btnDown" onClick="scrollDownDate()"><img src="asset/downArrow.svg" width="80"></div>
+            </div>
+        </div>
+
+        <div class = "FifthPage">
+            <p>The frequency of traffic accidents stays high from 8 am to 7 pm in Manhattan.</p>
+            <p>In 2020, the months with the fewest collisions were April and May because of the shutdown.</p>
+            <p>The possibility of traffic accidents during the weekends is relatively lower than that during the weekdays.</p>
+        </div>
+        <div class="ending">
+            <div>
+                <a href="https://jknylaw.com/new-york-car-accident-lawyer/statistics/">Reference</a><br>
+                <a href="https://www.kaggle.com/mysarahmadbhat/nyc-traffic-accidents">Dataset</a><br>
+                <a href="https://www.notion.so/City-As-System-1b0e470c9eeb40059f1f9f104d87fce2">Process Documentation</a><br>
+                <a href="https://www1.nyc.gov/site/nypd/stats/traffic-data/traffic-data-collision.page">To Learn More</a><br>
+
+            </div>
+        </div>
+
+      </section>
+
+        <div class="popPage1" id="popup1">
+
+            <p class="intro" >
+                Washington Heights
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>W 173rd St</p>
+                        <img src="asset/WashingtonHeights1.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>W 172nd St</p>
+                        <img src="asset/WashingtonHeights2.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>W 164th St</p>
+                        <img src="asset/WH3_W164.png">
+                    </div>    
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area1.png" width = "500" height="500">
+                </section>
+
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close1(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <div class="popPage2" id="popup2">
+
+            <p class="intro">
+                East Harlem 
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>W 125th St</p>
+                        <img src="asset/EH1_W125.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>Madison Ave</p>
+                        <img src="asset/EH2-MadisonAve.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>Dr Martin Ruther King Jr Blvd</p>
+                        <img src="asset/EH3_DrMartinRKJrBlvd.png">
+                    </div>    
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area2.png" width = "500" height="500">
+                </section>
+                
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close2(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <div class="popPage3" id="popup3">
+
+            <p class="intro">
+                Upper East
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>E 59th St</p>
+                        <img src="asset/UE1_E59.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>E 57th St</p>
+                        <img src="asset/UE2_E57.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>2nd Ave</p>
+                        <img src="asset/UE3_2Av.png">
+                    </div>    
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area3.png" width = "500" height="500">
+                </section>
+                
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close3(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <div class="popPage4" id="popup4">
+
+            <p class="intro">
+                Midtown West
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>W 40th St</p>
+                        <img src="asset/MTW1_W40.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>W 36th St</p>
+                        <img src="asset/MTW2_W36.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>6th Ave</p>
+                        <img src="asset/MTW3_6AV.png">
+                    </div>    
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area4.png" width = "500" height="500">
+                </section>
+                
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close4(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <div class="popPage5" id="popup5">
+
+            <p class="intro">
+                Kips Bay
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>2nd Ave</p>
+                        <img src="asset/KB1_2AV.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>E 38th St</p>
+                        <img src="asset/KBb_E38.png">
+                    </div>   
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area5.png" width = "500" height="500">
+                </section>
+                
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close5(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <div class="popPage6" id="popup6">
+
+            <p class="intro">
+                Bowery-ChinaTown
+            </p>
+
+            <div id="scrolly">
+                <section class="text-holder">
+                    <div class="scroll-step" >
+                        <p>Delancey St</p>
+                        <img src="asset/BC1_Delancey.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>Ludlow St</p>
+                        <img src="asset/BC2_Ludlow.png">
+                    </div>
+                    <div class="scroll-step" >
+                        <p>Canal St</p>
+                        <img src="asset/BC3_canal.png">
+                    </div>    
+                    <div class="scroll-step" >
+                        <p>Baxter St</p>
+                        <img src="asset/BC4_baxter.png">
+                    </div> 
+                </section>
+
+                <section class="graphic">
+                    <img src="asset/area6.png" width = "500" height="500">
+                </section>
+                
+            </div>
+            <div class="end">
+                <a href class="MyButton" onclick = "close6(); return false">CLOSE</a>
+            </div>
+        </div>
+
+        <!-- <div class = "ThirdPage">
+            <div class = "left">
+                <p>CRASH DATE</p>
+                <embed src="asset/date2.svg" class="dateSvg" alt="date" style="width: 800px;height: 700px;">
+
+            </div>
+
+            <div class = "right">
+                <p>CRASH TIME</p>
+                <embed src="asset/time2.svg" alt="time" style="width: 800px;height: 700px;">
+            </div>
+        </div> -->
+        
+        <!-- <div class= "FifthPage">
+            <p>this is the fifth</p>
+
+        </div> -->
+    </body>
+
+</html>
