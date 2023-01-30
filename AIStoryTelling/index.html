@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pop" id="pop">
+        <a href="#" class="close" onclick = close2(); return false></a>
+        <h1>hello</h1>
+        <input type="checkbox" class="messageCheckbox" name="style1" value="fantasy-world-generator" >
+        <label for="style1"> Fantasy World</label><br>
+        <input type="checkbox" class="messageCheckbox" name="style2" value="cyberpunk-generator">
+        <label for="style2"> Cyberpunk</label><br>
+        <input type="checkbox" class="messageCheckbox" name="style3" value="abstract-painting-generator">
+        <label for="style3"> Abstract Painting</label><br>
+
+        </br></br>  
+
+        <label for="line1">Line 1</label>
+        <input type="text" id="line1" name="line1">
+        </br></br>
+
+        <label for="line2">Line 2</label>
+        <input type="text" id="line2" name="line2">
+        </br></br>
+        <label for="line3">Line 3</label>
+        <input type="text" id="line3" name="line3">
+        </br></br>
+        <button onclick="runAPI()">Generate</button>
+        </br></br>
+    </div>
+
+    <div class="box">
+        <div class="textbox">
+            <p id="textbox1"></p>
+        </div>
+        <img id="img1" alt="nothing here">
+        <div class="textbox">
+            <p id="textbox2"></p>
+        </div>     
+        <img id="img2" alt="nothing here">
+        <div class="textbox" >
+            <p id="textbox3"></p>
+        </div> 
+        <img id="img3" alt="nothing here">
+    </div>
+
+    <script src="./d.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
