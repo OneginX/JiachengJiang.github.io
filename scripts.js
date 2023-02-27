@@ -1,9 +1,9 @@
-var vid = document.getElementById("myVideo");
+// var vid = document.getElementById("myVideo");
 
-function playVid() {
-  vid.play();
-}
+// function playVid() {
+//   vid.play();
+// }
 
-function pauseVid() {
-  vid.pause();
-}
+// function pauseVid() {
+//   vid.pause();
+// }

@@ -33,7 +33,7 @@
         <p class="indicator">
             Projects↘
         </p>
-        <div class="project" onmouseover="function playVid()">
+        <div class="project">
             <div class="description">
                 <div class="title"> THIS IS PROJECT 1</div>
                 <div class="overlay">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="preview">
-                <video id="myVideo">
+                <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">>
                     <source src="/assets/C.AGE/preview.mp4" type="video/mp4"></source>
                 </video>
             </div>
