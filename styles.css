@@ -1,0 +1,123 @@
+body{ margin: 0;}
+header{
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+}
+
+header > div{
+    margin-left: 1vw;
+    height: 100%;
+    width: 10%;
+    background-color: #ef6820;
+    text-align: center;
+}
+
+header > div > a{
+    line-height: 12vh;
+}
+
+.intro{
+    margin-top: 12vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 70vw;
+    height: 81vh;
+}
+
+.intro > h1{
+    padding-top: 30vh;
+}
+
+.project{
+    display:flex;
+    position: relative;
+    height: 80vh;
+    width: calc(100vw - 3vw);
+    background-color: bisque;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.indicator{
+    padding-left: 1vw;
+}
+
+.preview{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    background-color: aqua;    
+}
+
+.preview > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+}
+
+.preview > video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+}
+
+.description{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: brown;
+    z-index: 1;
+}
+
+.title{
+    line-height: 80vh;
+    text-align: center;
+    color: aliceblue;
+    font-size: 4em;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #353535;
+}
+
+.overlay > p{
+    width: 80%;
+    color: #ef6820;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project:hover > .description > .overlay{
+    opacity: 1;
+}
+

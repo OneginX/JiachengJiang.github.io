@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <title>Manhattan Crash Report</title>
+    </head>
+
+    <body>
+        <div class="intro">
+            <h1> Manhattan Crash Report</h1>
+            <p>
+                According to the government's report, there are about <span style="color: rgb(239, 104, 32); font-weight: bold;">6,000,000</span> traffic accidents across the United States every year, and 1/30 of them happens in New York City. In 2018, there were <span style="color: rgb(239, 104, 32); font-weight: bold;">228,047</span> motor vehicle accidents in all of New York City. This includes collisions involving all motorists, bicyclists, and pedestrians. <span style="color: rgb(239, 104, 32); font-weight: bold;">That breaks down to about 20,000 car accidents every month and over 600 every day in NYC.</span> 
+
+            </p>
+
+            <p>
+                For residents live in New York, it is particularly important to know the facts of New York's traffic situation. This report will narrow the scope down to the traffic accidents in Manhattan and focus on where and when these accidents happens.
+            </p>
+        </div>
+
+        <div class="where">
+            <h1>Where does it happens?</h1>
+            <div class = "Hmap">
+                <iframe 
+                    width='100%' 
+                    height='90%' 
+                    src="https://api.mapbox.com/styles/v1/oneginx/ckvfqphwl32at14qrl3xnueqp.html?title=false&access_token=pk.eyJ1Ijoib25lZ2lueCIsImEiOiJja3Y3M3R6cmw5ZmwzMzFuemE2eWUzcTIwIn0.7F3P4Bx_blkUZY1ueCj5TA&zoomwheel=false#11.27/40.7853/-73.9547/0/6"
+                    style="border:none;">
+                </iframe>
+                <p>*This is an interactive map on which you can drag, zoom, and also search for a specific location.</p>
+            </div>
+            <div class="analysis">
+                <p>From the heat map, it can be seen that the majority of car accidents on the entire Manhattan Island are concentrated in the central, southern, and northeastern regions. I have selected the six areas from these regions with the highest concentration of car accidents, which are <span style="color: #ef6820;">Washington Heights</span>, <span style="color: #ef6820;">East Harlem</span>, <span style="color: #ef6820;">Upper East</span>, <span style="color: #ef6820;">Midtown South</span>, <span style="color: #ef6820;">Kips Bay</span>, and <span style="color: #ef6820;">Bowery-ChinaTown area</span>.</p>
+            </div>
+            <div class="cards">
+                
+                <p>Detailed Map & Analysis</p>
+                <div onclick="pop1()">
+                    <img src="asset/area1.png" alt="WashingtonHeights" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">Washington Heights</div>
+                    </div>
+                </div>
+      
+    
+                <div onclick="pop2()">
+                    <img src="asset/area2.png" alt="EastHarlem" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">East Harlem</div>
+                    </div>
+                </div>
+    
+                <div onclick="pop3()">
+                    <img src="asset/area3.png" alt="UpperEast" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">Upper East</div>
+                    </div>
+                </div>
+    
+                <div onclick="pop4()">
+                    <img src="asset/area4.png" alt="MidtownWest" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">Midtown West</div>
+                    </div>
+                </div>
+    
+                <div onclick="pop5()">
+                    <img src="asset/area5.png" alt="KipsBay" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">Kips Bay</div>
+                    </div>
+                </div>
+    
+                <div onclick="pop6()">
+                    <img src="asset/area6.png" alt="Bowery-ChinaTown" width="300px" height="300px">
+                    <div class="overlay">
+                        <div class="overtext">Bowery-Chinatown</div>
+                    </div>
+                </div>
+                <div class="analysis">
+                    <p>By extracting Google Street View images from locations with high accident rates, it can be observed that these high-risk areas often share the following characteristics:</p>
+                    <ul>A high volume of <span style="color: #ef6820;">oversized vehicles</span></ul>
+                    <ul><span style="color: #ef6820;">Constructions</span> along the roadside that can affect road width and visibility</ul>
+                    <ul><span style="color: #ef6820;">Traffic congestion</span></ul>
+                    <ul>A high number of <span style="color: #ef6820;">parked cars</span> on both sides of the road</ul>
+                    <ul>Incresing <span style="color: #ef6820;">outdoor dining areas</span> due to the pandemic block the road</ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="when">
+            <h1>When Does It Happen?</h1>
+            <div class="charts">
+                <div class="left">
+                    <p>DATES</p>
+                    <embed src="asset/date2.svg" alt="date" style="width: 100%;">
+                </div>
+                <div class="right">
+                    <p>HOURS</p>
+                    <embed src="asset/time2.svg" alt="time" style="width: 100%;">
+                </div>
+            </div>
+            <div class="analysis"><p>Based on the monthly map, it can be seen that the car accident rate has been on the rise since the new year, while the lockdown at the end of March 2020 significantly reduced the car accident rate. However, with the lifting of the ban, the number of car accidents has gradually increased, but overall it has not rebounded to the level before the lockdown.</p></div>
+            <div class="analysis"><p>Through the daily map, it can be found that car accidents are more likely to occur during working hours, from 8am to 6pm, with slightly more accidents occurring in the afternoon than in the morning. Interestingly, the number of accidents at 1 pm shows a significant decrease compared to adjacent time periods, which may be due to the fact that most people take a lunch break at this time.</p></div>
+        </div>   
+
+        <div class="ending">
+            <a href="https://jknylaw.com/new-york-car-accident-lawyer/statistics/">Reference</a><br>
+            <a href="https://www.kaggle.com/mysarahmadbhat/nyc-traffic-accidents">Dataset</a><br>
+            <a href="https://www.notion.so/City-As-System-1b0e470c9eeb40059f1f9f104d87fce2">Process Documentation</a><br>
+            <a href="https://www1.nyc.gov/site/nypd/stats/traffic-data/traffic-data-collision.page">To Learn More</a><br>
+        </div>  
+    </body>
+
+    <div class="popPage1" id="popup1">
+
+        <p class="begin" >
+            Washington Heights
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>W 173rd St</p>
+                    <img src="asset/WashingtonHeights1.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>W 172nd St</p>
+                    <img src="asset/WashingtonHeights2.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>W 164th St</p>
+                    <img src="asset/WH3_W164.png">
+                </div>    
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area1.png" width = "500" height="500">
+            </section>
+
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close1(); return false">CLOSE</a>
+        </div>
+    </div>
+
+    <div class="popPage2" id="popup2">
+
+        <p class="begin">
+            East Harlem 
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>W 125th St</p>
+                    <img src="asset/EH1_W125.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>Madison Ave</p>
+                    <img src="asset/EH2-MadisonAve.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>Dr Martin Ruther King Jr Blvd</p>
+                    <img src="asset/EH3_DrMartinRKJrBlvd.png">
+                </div>    
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area2.png" width = "500" height="500">
+            </section>
+            
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close2(); return false">CLOSE</a>
+        </div>
+    </div>
+
+    <div class="popPage3" id="popup3">
+
+        <p class="begin">
+            Upper East
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>E 59th St</p>
+                    <img src="asset/UE1_E59.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>E 57th St</p>
+                    <img src="asset/UE2_E57.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>2nd Ave</p>
+                    <img src="asset/UE3_2Av.png">
+                </div>    
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area3.png" width = "500" height="500">
+            </section>
+            
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close3(); return false">CLOSE</a>
+        </div>
+    </div>
+
+    <div class="popPage4" id="popup4">
+
+        <p class="begin">
+            Midtown West
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>W 40th St</p>
+                    <img src="asset/MTW1_W40.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>W 36th St</p>
+                    <img src="asset/MTW2_W36.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>6th Ave</p>
+                    <img src="asset/MTW3_6AV.png">
+                </div>    
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area4.png" width = "500" height="500">
+            </section>
+            
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close4(); return false">CLOSE</a>
+        </div>
+    </div>
+
+    <div class="popPage5" id="popup5">
+
+        <p class="begin">
+            Kips Bay
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>2nd Ave</p>
+                    <img src="asset/KB1_2AV.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>E 38th St</p>
+                    <img src="asset/KBb_E38.png">
+                </div>   
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area5.png" width = "500" height="500">
+            </section>
+            
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close5(); return false">CLOSE</a>
+        </div>
+    </div>
+
+    <div class="popPage6" id="popup6">
+
+        <p class="begin">
+            Bowery-ChinaTown
+        </p>
+
+        <div id="scrolly">
+            <section class="text-holder">
+                <div class="scroll-step" >
+                    <p>Delancey St</p>
+                    <img src="asset/BC1_Delancey.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>Ludlow St</p>
+                    <img src="asset/BC2_Ludlow.png">
+                </div>
+                <div class="scroll-step" >
+                    <p>Canal St</p>
+                    <img src="asset/BC3_canal.png">
+                </div>    
+                <div class="scroll-step" >
+                    <p>Baxter St</p>
+                    <img src="asset/BC4_baxter.png">
+                </div> 
+            </section>
+
+            <section class="graphic">
+                <img src="asset/area6.png" width = "500" height="500">
+            </section>
+            
+        </div>
+        <div class="end">
+            <a href class="MyButton" onclick = "close6(); return false">CLOSE</a>
+        </div>
+    </div>
+
+</html>

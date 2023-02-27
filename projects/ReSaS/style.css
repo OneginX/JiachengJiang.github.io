@@ -1,0 +1,40 @@
+html,
+body {
+
+  background-color: black;
+  background-image: url("transColorful.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+
+.layer2 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+iframe {
+  border-width: 0;
+  border-style: none;
+  border-image: none;
+}
+
+.layer1 {
+  position: absolute;
+}
+
+p {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+a {
+  text-decoration: none;
+}
