@@ -1,9 +1,11 @@
-// var vid = document.getElementById("myVideo");
+function CAGE() {
+  window.open("/projects/ReSaS/index.html", "C.AGE");
+}
 
-// function playVid() {
-//   vid.play();
-// }
+function MCR() {
+  window.open("/projects/MCR_re/index.html", "Manhattan Crash Report");
+}
 
-// function pauseVid() {
-//   vid.pause();
-// }
+function Tipsy() {
+  window.open("/projects/Tipsy/index.html", "Tipsy");
+}
