@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
+
 <body>
     <header>
         <div>
-            <a href="">WORK</a>
+            <a href="#projects">WORK</a>
         </div>
         <div>
-            <a href="">ABOUT</a>
+            <a href="/About/index.html">ABOUT</a>
         </div>
         <div>
-            <a href="">RESUME</a>
+            <a href="/assets/resume_jiacheng.pdf" target="_blank">RESUME</a>
         </div>
     </header>
 
@@ -25,12 +26,11 @@
         <h1>
             Hello!</br>
             This is Jiacheng - a UX designer & developer in NYC</br>
-            <!-- I am interested in the intersection of technology and design</br> -->
         </h1>
     </div>
 
     <div class="work">
-        <p class="indicator">
+        <p class="indicator" id="projects">
             Projects↘
         </p>
 
@@ -49,6 +49,9 @@
         </div>
 
         <div class="project" onclick="CAGE()">
+            <div class="preview">
+                <img src="assets/C.AGE/preview.png" alt="C.AGE">
+            </div>
             <div class="description">
                 <div class="title">
                     <h1>C.AGE</h1>
@@ -57,16 +60,9 @@
                     <p>C.AGE is an interactive net art project based on p5.js that aims to visually showcase the potential negative consequences of large corporations collecting user information.</p>
                 </div>
             </div>
-            <div class="preview">
-                <img src="assets/C.AGE/preview.png" alt="C.AGE">
-            </div>'
-            <a href="/projects/ReSaS/index.html"></a>
         </div>
 
         <div class="project" onclick="MCR()">
-            <div class="preview">
-                <img src="assets/MCR/preview.png"  alt="Manhattan Crash Report">
-            </div>
             <div class="description">
                 <div class="title">
                     <h1>Manhattan Crash Report</h1>
@@ -75,9 +71,12 @@
                     <p>This is a data visualization project which analyzed the data of traffic accidents in Manhattan. The goal of it is to help the readers to know about the city they live in and try to avoid accidents.</p>
                 </div>
             </div>
+            <div class="preview">
+                <img src="assets/MCR/preview.png"  alt="Manhattan Crash Report">
+            </div>
         </div>
 
-        <div class="project">
+        <!-- <div class="project">
             <div class="preview">
 
             </div>
@@ -87,35 +86,7 @@
                     <p>This is the descriptions.This is the descriptions.This is the descriptions.This is the descriptions.This is the descriptions.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
-        <title>Jiacheng Jiang</title>
-    </head>
-    <body>
-        <hearder>
-            
-        </hearder>
-        <h1>Jiacheng</h1>
-    <ul>
-        <li><a href="./infiniteRotation/index.html">Infinite Rotation</a></li>
-        <li><a href="./ManhattanCrashReport_220811Revised/index.html">Manhanttan Crash Report</a></li>
-        <li><a href="./ReSaS/index.html">Box</a></li>
-        <li><a href="./web_adventure/category.html">Poem Adventure</a></li>
-    </ul>
-    </body>
-</html> -->

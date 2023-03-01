@@ -1,11 +1,11 @@
+function Tipsy() {
+  window.location.href = "/projects/Tipsy/index.html";
+}
+
 function CAGE() {
-  window.open("/projects/ReSaS/index.html", "C.AGE");
+  window.location.href = "/projects/ReSaS/index.html";
 }
 
 function MCR() {
-  window.open("/projects/MCR_re/index.html", "Manhattan Crash Report");
-}
-
-function Tipsy() {
-  window.open("/projects/Tipsy/index.html", "Tipsy");
+  window.location.href = "/projects/MCR_re/index.html";
 }
